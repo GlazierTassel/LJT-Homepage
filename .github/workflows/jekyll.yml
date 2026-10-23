@@ -35,12 +35,15 @@ jobs:
           bundler-cache: true
           cache-version: 0
       - name: Configure GitHub Pages
+        id: pages
         uses: actions/configure-pages@v6.0.0
+        continue-on-error: true
         with:
           enablement: true
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        # Outputs to the './_site' directory by default.
+        # Fall back to /LJT-Homepage if Pages has not been enabled yet.
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '/LJT-Homepage' }}"
         env:
           JEKYLL_ENV: production
       - name: Upload GitHub Pages artifact
