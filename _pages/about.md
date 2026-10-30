@@ -62,7 +62,7 @@ Publications
    Jinghan Zhang, Shiqi Chen, Junteng Liu, Junxian He.  
    *NeurIPS 2023*.
 
-You can also find the full publication list on the [Publications](/publications/) page and on [Google Scholar](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate).
+You can also find the full publication list on the [Publications]({{ site.baseurl }}/publications/) page and on [Google Scholar](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate).
 
 Contact
 ======
